@@ -1,12 +1,10 @@
-import thing
+import thing  # Imports module
 
-from flask import *
-
+from flask import * #Imports all flask functions 
 
 # Create flask app and global pi 'thing' object.
 app = Flask(__name__)
 pi_thing = thing.PiThing()
-
 
 # Define app routes.
 # Index route renders the main HTML page.
@@ -28,7 +26,6 @@ def led(state):
     else:
         return ('Unknown LED state', 400)
     return ('', 204)
-
 
 # Start the flask debug server listening on the pi port 5000 by default.
 if __name__ == "__main__":

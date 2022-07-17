@@ -1,14 +1,12 @@
 import time
-
 import thing
-
 
 # Create the pi thing.
 pi_thing = thing.PiThing()
 
 # Print the current switch state.
 switch = pi_thing.read_switch()
-print('Switch status: {0}'.format(switch))
+print(f'Switch status: {switch}')
 
 # Now loop forever blinking the LED.
 print('Looping with LED blinking (Ctrl-C to quit)...')
